@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useCallback,useEffect} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import decode from 'jwt-decode'
@@ -15,11 +15,17 @@ const Navbar = () => {
     
     const navigate = useNavigate()
 
-    const handleLogout = () => {
+    // const handleLogout = () => {
+    //   dispatch({type: 'LOGOUT'});
+    //   navigate('/')
+    //   dispatch(setCurrentUser(null))
+    // }
+
+    const handleLogout = useCallback(() => {
       dispatch({type: 'LOGOUT'});
       navigate('/')
       dispatch(setCurrentUser(null))
-    }
+    }, [dispatch,navigate]);
 
     useEffect(() => {
       const token = User?.token
@@ -30,7 +36,7 @@ const Navbar = () => {
         }
       }
        dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))))
-    }, [dispatch])
+    }, [dispatch, handleLogout,User?.token ])
 
   return (
     <nav className='main-nav'>
