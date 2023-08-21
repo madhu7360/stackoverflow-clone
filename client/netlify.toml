@@ -1,0 +1,6 @@
+[build]
+  # Set your build command here
+  command = "npm run build"
+
+  # Ignore treating warnings as errors
+  ignore_warnings = true
