@@ -73,5 +73,8 @@ The Stack Overflow clone is a web application designed to replicate the fundamen
     
 This Stack Overflow clone serves as a comprehensive platform for users to seek assistance, share knowledge, and engage in a collaborative Q&A community. The implementation demonstrates key functionalities found in popular Q&A platforms.
 
+# `Demo Video`
+
+
 https://github.com/madhu7360/stackoverflow-clone/assets/109023316/d23a2100-0386-4788-8e0a-970adcce5373
 
