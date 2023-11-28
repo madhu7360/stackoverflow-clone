@@ -4,29 +4,29 @@ The Stack Overflow clone is a web application designed to replicate the fundamen
 
 # `Key Features:`
 
-# `01.User Authentication:`
+ `01.User Authentication:`
 
     The application includes a robust user authentication system, allowing users to sign up and log in securely.
     User authentication is handled through JWT (JSON Web Tokens), ensuring secure transmission of user data.
 
-# `02.Q&A Functionality:`
+`02.Q&A Functionality:`
 
     Users can post questions with titles, detailed bodies, and  tags describing the question's context.
     The application supports answering questions, allowing users to provide detailed responses to posted queries.
 
-# `03.Voting System:`
+`03.Voting System:`
 
     Users can upvote or downvote both questions and answers, contributing to the overall community-driven ranking of content.
 
-# `04.User Profile:`
+`04.User Profile:`
 
     Each user has a profile that displays relevant information such as their joined date, tags associated with their interests, and an "about" section.
 
-# `05.Redux State Management:`
+`05.Redux State Management:`
 
     The application uses Redux for state management, maintaining a centralized store for handling user authentication, current user data, and question-related information.
 
-# `06.Chatbot Integration:`
+`06.Chatbot Integration:`
 
     A simple AI-powered chatbot is integrated into the application, allowing users to interact with the AI for general queries or assistance.
     The chatbot uses the OpenAI GPT model to generate responses based on user input.
@@ -36,19 +36,19 @@ The Stack Overflow clone is a web application designed to replicate the fundamen
     Users undergo email verification to enhance security and ensure the validity of user accounts.
     Email verification involves sending an OTP to the user's email address, and users must enter the OTP for account activation.
 
-# `08.Password Hashing:`
+`08.Password Hashing:`
 
     User passwords are securely hashed using bcrypt, ensuring the protection of user credentials.
 
-# `09.Responsive UI:`
+`09.Responsive UI:`
 
     The user interface is designed to be responsive, providing an optimal experience across different devices and screen sizes.
 
-# `10.Toast Notifications:`
+`10.Toast Notifications:`
 
     The react-hot-toast library is utilized for displaying toast notifications, offering real-time feedback to users during email verification processes.
 
-# `11.RESTful API:`
+`11.RESTful API:`
 
     The backend of the application is built using Node.js and Express.js, providing a RESTful API for handling various operations, such as posting questions, voting, and user authentication.
 
